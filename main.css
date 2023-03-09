@@ -1,0 +1,211 @@
+/*fix alignment*/
+/*fix paddings*/
+/*add functions*/
+/*new logo*/
+/*fix colors*/
+
+body{
+    background-color: black;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0; 
+    margin: 0;
+}
+
+.home-page .top {
+    background-image: url(pic/Anthony_Ho_Hometest_5%20copy%203.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 680px;
+    position: relative;
+}
+
+/*nav bar*/
+.home-page .top .nav{
+  overflow: hidden;
+  color: gainsboro;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.home-page .top .nav .logo {
+    background-image: url(pic/logov3.png);
+    float: left;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-repeat: no-repeat;
+    transform: scale(0.7, 0.7);
+    margin: -5px;
+}
+
+.home-page .top .gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+99&0+3,1+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 3%, rgba(0,0,0,0.99) 99%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 3%,rgba(0,0,0,0.99) 99%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 3%,rgba(0,0,0,0.99) 99%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    height 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.home-page .top .nav a {
+  float: right;
+  font-size: 20px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.home-page .top .nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.home-page .top .hero .page-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+}
+
+.home-page .top .hero p {
+    text-align: center;
+    color: gainsboro;
+    font-size: 40px;
+    margin: 20px;
+}
+
+/*recent work*/
+.home-page .recent {
+    background-color: black;
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.home-page .recent .recent-title {
+    background-image: url(pic/Recent%20Work%20copy.png);background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+/*grid*/
+.home-page .image-list {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.home-page .image-list a {
+    display: block;
+    width: calc((100% / 3) - 10px);
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.home-page .image-list a .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #000;
+    transition: all 0.2s;
+}
+
+.home-page .image-list a:hover .overlay {
+    opacity: 0.5;
+}
+
+.home-page .image-list a .title {
+    color: #FFF;
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.home-page .image-list a:hover .title {
+    opacity: 3;
+}
+
+/*about me*/
+.home-page .about {
+  background-color: black;
+  overflow: hidden;
+}
+
+.home-page .about .divider{
+    background-image: url(line.png);
+    background-position: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    height: .5px;
+    width: 50px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-page .about .about-title {
+    background-image: url(pic/About%20Me%20copy.png);background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    padding: 30px;
+}
+
+.home-page .about .about-text {
+    text-align: center;
+    color: gainsboro;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+}
+
+
+/*social media*/
+.home-page .social a {
+    float: right;
+    padding-right: 10px;
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+    margin-right: -5px;
+}
+
+.home-page  .social a:hover{
+    color: black;
+    opacity: 0.3;
+    transition: 0.2s;
+}
+
+.copyright{
+    font-size: 15px;
+    color: gainsboro;
+    float: left;
+    margin-top: 80px;
+    padding-left: 20px;
+}
+
+
